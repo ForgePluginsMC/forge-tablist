@@ -86,4 +86,4 @@ Compiles with JDK 25 (`~/workspace/.toolchains/jdk-25.0.4.1+1`) via direct `java
 
 ---
 
-<p align="center"><i>Part of the <a href="https://github.com/ChristopherIrwin">Forge</a> plugin suite — original implementations, zero dependencies.</i></p>
+<p align="center"><i>Part of the <a href="https://github.com/ForgePluginsMC">Forge</a> plugin suite — original implementations, zero dependencies.</i></p>
