@@ -1,4 +1,21 @@
-# ForgeTablist
+<p align="center">
+  <img src="assets/logo.webp" width="160" alt="ForgeTablist logo">
+</p>
+
+<h1 align="center">ForgeTablist</h1>
+
+<p align="center"><i>Animated tablist headers &amp; footers, per-group tab names, and an animated server-list MOTD.</i></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-ff7b2e?style=for-the-badge" alt="version 1.0.0">
+  <img src="https://img.shields.io/badge/Paper-26.3-2f9e6e?style=for-the-badge" alt="Paper 26.3">
+  <img src="https://img.shields.io/badge/Java-25-f89820?style=for-the-badge" alt="Java 25">
+  <img src="https://img.shields.io/badge/animated-2563eb?style=for-the-badge" alt="animated">
+  <img src="https://img.shields.io/badge/MiniMessage-everywhere-b565d8?style=for-the-badge" alt="MiniMessage everywhere">
+  <img src="https://img.shields.io/badge/dependencies-zero-6b7280?style=for-the-badge" alt="zero dependencies">
+</p>
+
+---
 
 Animated tablist headers and footers, per-permission-group tab names, and an animated server-list MOTD for Paper servers. Every string is MiniMessage. An original implementation with zero runtime dependencies beyond Paper itself.
 
@@ -64,3 +81,7 @@ Compiles with JDK 25 (`~/workspace/.toolchains/jdk-25.0.4.1+1`) via direct `java
 
 - Nullness is declared package-wide with `@NotNullByDefault`; every parameter and return value that can be null is explicitly annotated `@Nullable` (e.g. the nullable `playerName` in MOTD rendering context).
 - No deprecated Bukkit/Paper APIs are used anywhere in the codebase.
+
+---
+
+<p align="center"><i>Part of the <a href="https://github.com/ChristopherIrwin">Forge</a> plugin suite — original implementations, zero dependencies.</i></p>
