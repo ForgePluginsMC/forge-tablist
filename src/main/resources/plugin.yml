@@ -1,0 +1,15 @@
+name: ForgeTablist
+version: '1.0.0'
+main: com.forge.tablist.ForgeTablist
+api-version: '26.3'
+author: Forge
+description: Animated tablist header/footer, per-group tab names and animated MOTD. All MiniMessage.
+commands:
+  ftablist:
+    description: ForgeTablist admin command
+    usage: /ftablist reload
+    permission: forgetablist.admin
+permissions:
+  forgetablist.admin:
+    description: Admin access to ForgeTablist (/ftablist reload)
+    default: op

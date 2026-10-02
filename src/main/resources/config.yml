@@ -1,0 +1,61 @@
+# ------------------------------------------------------------------
+# ForgeTablist 1.0.0 — animated tablist, tab names & MOTD
+# Every string is MiniMessage. Supported placeholders in frames:
+#   %player%  %online%  %max%  %tps%
+# ------------------------------------------------------------------
+
+# Animated tablist header frames (each frame = a list of lines).
+# The gradient phase-shifts every frame for a shimmering banner.
+header-frames:
+  - - "<gradient:#ff6a00:#ffc247><bold>FORGE NETWORK</bold></gradient>"
+    - "<dark_gray>◆ ━━━━━━━━━━━━━━━ ◆"
+  - - "<gradient:#ff8c2e:#ffd166><bold>FORGE NETWORK</bold></gradient>"
+    - "<gray>Welcome back, <white>%player%</white><gray>!"
+  - - "<gradient:#ffab4a:#ffe08a><bold>FORGE NETWORK</bold></gradient>"
+    - "<green>● <gray>%online%<green> online <dark_gray>|</dark_gray> <green>● <gray>TPS <green>%tps%"
+  - - "<gradient:#ffc247:#ff6a00><bold>FORGE NETWORK</bold></gradient>"
+    - "<gray>Six Forge plugins running <gold>✦"
+
+# Animated tablist footer frames — rotates tips, links and live stats.
+footer-frames:
+  - - "<gold>✦ <gray>Thanks for playing on <gold>Forge Network"
+    - "<dark_gray>play.forge.example"
+  - - "<gray>Have fun, <white>%player%</white><gray>!"
+    - "<dark_gray>━━━━━━━━━━━━━━━"
+  - - "<aqua>ⓘ <gray>Claim playtime rewards with <aqua>/playtime"
+    - "<dark_gray>play.forge.example"
+  - - "<yellow>★ <gray>Vote daily for bonus keys!"
+    - "<dark_gray>discord.gg/forge"
+
+# Seconds between tablist frame changes
+frame-interval-seconds: 2
+
+# Tablist entry names. Checked top to bottom — first match wins.
+# permission: "" is the fallback group that matches everyone.
+# Prefix + name + suffix are parsed as ONE MiniMessage string, so
+# paired tags like <gray>...</gray> wrap the name correctly.
+groups:
+  - permission: "forgetablist.group.admin"
+    prefix: "<red><bold>[ADMIN] </bold></red>"
+    suffix: ""
+  - permission: "forgetablist.group.vip"
+    prefix: "<gold>[VIP] </gold>"
+    suffix: ""
+  - permission: ""
+    prefix: "<gray>"
+    suffix: "</gray>"
+
+# Animated 2-line MOTD frames for the server list ping
+motd-frames:
+  - - "<gradient:#ff6a00:#ffc247><bold>FORGE NETWORK</bold></gradient>"
+    - "<gray>All six Forge plugins live <green>✦"
+  - - "<gradient:#ffc247:#ff6a00><bold>FORGE NETWORK</bold></gradient>"
+    - "<yellow>%online%/%max%</yellow> <gray>players online — join us!"
+  - - "<gradient:#ff8c2e:#ffd166><bold>FORGE NETWORK</bold></gradient>"
+    - "<aqua>play.forge.example <dark_gray>| <aqua>discord.gg/forge"
+
+# Seconds between MOTD frame changes
+motd-interval-seconds: 5
+
+# Max-players value shown in the server list (-1 = use the server default)
+motd-max-players: 100
