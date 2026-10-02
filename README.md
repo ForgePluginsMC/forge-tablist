@@ -15,6 +15,8 @@
   <img src="https://img.shields.io/badge/dependencies-zero-6b7280?style=for-the-badge" alt="zero dependencies">
 </p>
 
+<p align="center"><sub>Not affiliated with <a href="https://minecraftforge.net">MinecraftForge</a> — "Forge" is just a name.</sub></p>
+
 ---
 
 Animated tablist headers and footers, per-permission-group tab names, and an animated server-list MOTD for Paper servers. Every string is MiniMessage. An original implementation with zero runtime dependencies beyond Paper itself.
